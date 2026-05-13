@@ -1,0 +1,94 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #f5ebe0; /* BEIGE */
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #9b2226; /* ROJO */
+}
+
+.subtitulo {
+  text-align: center;
+  color: #606c38; /* VERDE */
+  margin-bottom: 20px;
+}
+
+/* GRID AJUSTADO PARA VERTICALIDAD */
+.contenedor {
+  display: grid;
+  /* Esto evita que se pongan en horizontal aunque el logo sea ancho */
+  grid-template-columns: repeat(auto-fit, 320px); 
+  gap: 25px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.producto {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  border-left: 6px solid #606c38; /* VERDE */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto h3 {
+  color: #9b2226; /* ROJO */
+  margin-bottom: 10px;
+}
+
+.sub {
+  font-weight: bold;
+  color: #606c38; /* VERDE */
+  margin: 0;
+}
+
+/* NUEVOS ESTILOS PARA PRECIOS CLAROS */
+.variedad-fila {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.precio-item {
+  font-size: 18px;
+  font-weight: bold;
+  color: #9b2226;
+}
+
+ul {
+  margin: 5px 0;
+  padding-left: 18px;
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.header {
+  background: #606c38;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 1210px; /* Tu tamaño original */
+  height: 250px;
+  object-fit: cover;
+}
